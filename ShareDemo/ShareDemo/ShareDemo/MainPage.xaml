@@ -3,10 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ShareDemo"
              x:Class="ShareDemo.MainPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="share.png" Clicked="Share_Tapped"/>
+    </ContentPage.ToolbarItems>
 
     <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
+    	<Image Source="logo.png" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        <Label Text="www.julianocustodio.com" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
     </StackLayout>
